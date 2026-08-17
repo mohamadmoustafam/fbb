@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonna's Universe · Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio
+      id="bg-music"
+      src="WhatsApp Audio 2026-08-17 at 11.06.00 PM.mpeg.wav"
+      loop
+      preload="auto"
+    ></audio>
+    <!-- ambient starfield canvas, sits behind everything -->
+    <canvas id="bg-stars"></canvas>
+
+    <!-- global sound control -->
+    <button id="sound-toggle" class="sound-toggle" aria-label="Mute sound">
+      <svg id="icon-on" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor" d="M4 9v6h4l5 5V4L8 9H4z" />
+        <path
+          fill="currentColor"
+          d="M16.5 12a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"
+        />
+        <path
+          fill="currentColor"
+          d="M14 3.2v2.06A7 7 0 0 1 19 12a7 7 0 0 1-5 6.74v2.06A9 9 0 0 0 21 12a9 9 0 0 0-7-8.8z"
+        />
+      </svg>
+      <svg
+        id="icon-off"
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        style="display: none"
+      >
+        <path fill="currentColor" d="M4 9v6h4l5 5V4L8 9H4z" />
+        <path
+          fill="currentColor"
+          d="M18.36 7.64 16.95 9.05 18.34 10.44 16.93 11.85 18.34 13.26 19.75 11.85 21.16 13.26 22.57 11.85 21.16 10.44 22.57 9.03 21.16 7.62 19.75 9.03z"
+          transform="translate(-2 0)"
+        />
+      </svg>
+    </button>
+
+    <!-- side dot navigation -->
+    <nav class="dot-nav" id="dot-nav">
+      <button
+        data-target="hero"
+        class="dot active"
+        aria-label="Opening"
+      ></button>
+      <button data-target="moon" class="dot" aria-label="The Moon"></button>
+      <button
+        data-target="universe"
+        class="dot"
+        aria-label="Her Universe"
+      ></button>
+      <button data-target="effect" class="dot" aria-label="The Effect"></button>
+      <button data-target="reasons" class="dot" aria-label="Reasons"></button>
+      <button data-target="gallery" class="dot" aria-label="Moments"></button>
+      <button
+        data-target="constellation"
+        class="dot"
+        aria-label="Constellation"
+      ></button>
+      <button data-target="finale" class="dot" aria-label="Finale"></button>
+    </nav>
+
+    <main id="scroller">
+      <!-- ============ PAGE 1 — HERO ============ -->
+      <section id="hero" class="page">
+        <div class="hero-heart-wrap">
+          <canvas id="heart-canvas"></canvas>
+          <div class="hero-names">
+            <span class="hero-name-small">Afnan</span>
+            <span class="hero-name-big"
+              >Fonna <span class="heart-glyph">♡</span></span
+            >
+          </div>
+        </div>
+        <p class="hero-caption">
+          a little universe, built for my sister, on her birthday
+        </p>
+        <button id="enter-btn" class="enter-btn">Enter Her World</button>
+      </section>
+
+      <!-- ============ PAGE 2 — THE MOON ============ -->
+      <section id="moon" class="page">
+        <h2 class="section-eyebrow">the moon reveals her</h2>
+        <div class="moon-stage" id="moon-stage">
+          <img
+            id="moon-photo"
+            src="photos/WhatsApp Image 2026-08-17 at 7 9.32.30 PM.jpeg"
+            alt=""
+            draggable="false"
+          />
+          <canvas id="moon-cover"></canvas>
+          <div class="moon-orb" id="moon-orb"></div>
+        </div>
+        <p class="moon-line" id="moon-line">
+          Even the moonlight knows exactly where to find you.
+        </p>
+      </section>
+
+      <!-- ============ PAGE 3 — IF FONNA WERE A UNIVERSE ============ -->
+      <section id="universe" class="page">
+        <h2 class="section-eyebrow">if Fonna were a universe</h2>
+        <div class="universe-lines">
+          <p class="uline">
+            her laugh would be the sound right after the Big Bang.
+          </p>
+          <p class="uline">
+            her patience, a slow-turning galaxy that never has to rush.
+          </p>
+          <p class="uline">
+            her stubbornness, a star too bright to be told to dim.
+          </p>
+          <p class="uline">
+            her memory, a whole archive of everyone she has ever loved.
+          </p>
+          <p class="uline">
+            her love, the quiet gravity that keeps her people in orbit.
+          </p>
+          <p class="uline">
+            and her birthday — the one day a year the whole sky turns toward
+            her.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ PAGE 4 — THE FONNA EFFECT ============ -->
+      <section id="effect" class="page">
+        <h2 class="section-eyebrow">the Fonna effect</h2>
+        <p class="effect-intro">
+          there's a thing that happens the second she walks into a room.
+        </p>
+        <div class="effect-stage">
+          <button id="let-her-in" class="let-in-btn">
+            <span class="let-in-glow"></span>
+            <span class="let-in-label">Let her in</span>
+          </button>
+        </div>
+        <p class="effect-result" id="effect-result">
+          the room gets warmer. everyone stands a little taller. somehow,
+          everything is funnier.
+        </p>
+      </section>
+
+      <!-- ============ PAGE 5 — 100 REASONS ============ -->
+      <section id="reasons" class="page reasons-page">
+        <h2 class="section-eyebrow">100 reasons, give or take</h2>
+        <p class="reasons-sub">tap a heart</p>
+        <div class="reasons-grid" id="reasons-grid"></div>
+        <div class="reason-popup" id="reason-popup">
+          <span id="reason-text"></span>
+        </div>
+      </section>
+
+      <!-- ============ PAGE 6 — MOMENTS / GALLERY ============ -->
+      <section id="gallery" class="page gallery-page">
+        <h2 class="section-eyebrow">a few of her moments</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <!-- ============ PAGE 7 — CONSTELLATION ============ -->
+      <section id="constellation" class="page">
+        <h2 class="section-eyebrow">her constellation</h2>
+        <canvas id="constellation-canvas"></canvas>
+        <p class="const-caption">move your cursor across the sky</p>
+      </section>
+
+      <!-- ============ FINAL PAGE ============ -->
+      <section id="finale" class="page finale-page">
+        <canvas id="finale-canvas"></canvas>
+        <div class="finale-heart-btn" id="finale-heart">
+          <span class="fh-core"></span>
+        </div>
+        <div class="finale-text" id="finale-text"></div>
+        <button id="restart-btn" class="restart-btn">Enter Again</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
