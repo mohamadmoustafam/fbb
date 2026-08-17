@@ -597,35 +597,35 @@ reasons.forEach((text, i) => {
 ========================================================= */
 const galleryPhotos = [
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 1 9.27.45 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 1 9.27.45 PM.jpeg",
     caption: "a familiar kind of joy",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 2 9.28.21 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 2 9.28.21 PM.jpeg",
     caption: "somewhere by the water",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 3 9.28.27 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 3 9.28.27 PM.jpeg",
     caption: "city lights, late night",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 4 9.28.34 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 4 9.28.34 PM.jpeg",
     caption: "landing day",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 5 9.28.52 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 5 9.28.52 PM.jpeg",
     caption: "a good afternoon",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 8 9.33.42 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 8 9.33.42 PM.jpeg",
     caption: "always the fun aunt",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 9 9.34.08 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 9 9.34.08 PM.jpeg",
     caption: "wedding lights",
   },
   {
-    src: "photos/WhatsApp Image 2026-08-17 at 9.27.02 PM.jpeg",
+    src: "WhatsApp Image 2026-08-17 at 9.27.02 PM.jpeg",
     caption: "another arrival, another hug",
   },
 ];
